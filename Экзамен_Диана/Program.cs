@@ -19,7 +19,6 @@ namespace Экзамен_Диана
                     exit = 1;
                 else
                 {
-                    Console.ReadKey();
                     Console.Clear();
                 }    
             }     
@@ -60,7 +59,7 @@ namespace Экзамен_Диана
         public void InfoOutput()
         {
             Console.WriteLine("Вы зашли в Мой Дневник! Выберите действие: \n");
-            Console.Write("1.Посмотреть расписание за прошедную неделю\n2.Показать оценки по предметам\n3.Показать домашнее задание: ");
+            Console.Write("1.Посмотреть расписание за прошедшую неделю\n2.Показать оценки по предметам\n3.Показать домашнее задание: ");
             user_choice = Convert.ToInt32(Console.ReadLine());
 
             if (user_choice == 1)
@@ -73,7 +72,7 @@ namespace Экзамен_Диана
             }    
             else
             {
-                Homework();
+                Homework(); //выводим домашнее задание
             }  
         }
 
